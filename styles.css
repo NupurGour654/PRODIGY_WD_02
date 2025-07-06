@@ -26,6 +26,7 @@ body {
 .time {
     font-size: 3rem;
     margin-bottom: 20px;
+    padding: 0; 
 }
 /* ----- Control Buttons ----- */
 .buttons button {
