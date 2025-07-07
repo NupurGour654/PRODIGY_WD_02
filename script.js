@@ -65,3 +65,8 @@ function reset() {
 startStopBtn.addEventListener('click', startStop);
 lapBtn.addEventListener('click', lap);
 resetBtn.addEventListener('click', reset);
+
+document.getElementById("themeToggleBtn").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
