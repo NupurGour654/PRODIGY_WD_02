@@ -77,3 +77,19 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .stopwatch {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
