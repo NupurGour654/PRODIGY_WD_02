@@ -70,3 +70,23 @@ document.getElementById("themeToggleBtn").addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
+document.getElementById("exportBtn").addEventListener("click", () => {
+    const laps = document.querySelectorAll("#laps li");
+    if (laps.length === 0) {
+        alert("No laps to export!");
+        return;
+    }
+
+    let content = '';
+    laps.forEach((lap, index) => {
+        content += `Lap ${index + 1}: ${lap.textContent}\n`;
+    });
+
+    const blob = new Blob([content], { type: "text/plain" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "laps.txt";
+    link.click();
+});
+
+
